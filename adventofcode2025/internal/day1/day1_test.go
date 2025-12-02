@@ -2,9 +2,21 @@ package day1
 
 import "testing"
 
+const testInput = `L68
+L30
+R48
+L5
+R60
+L55
+L1
+L99
+R14
+L82
+`
+
 func TestPartOne(t *testing.T) {
-	expected := 0
-	result, err := PartOne("")
+	expected := 3
+	result, err := PartOne(testInput)
 	if err != nil {
 		t.Fatalf("Unexpected error: %v", err)
 	}
