@@ -89,6 +89,9 @@ func runDay(day int) error {
 		if err := runPart(1, 1, day1.PartOne, input); err != nil {
 			return err
 		}
+		if err := runPart(1, 2, day1.PartTwo, input); err != nil {
+			return err
+		}
 	default:
 		return fmt.Errorf("day %d not implemented", day)
 	}
