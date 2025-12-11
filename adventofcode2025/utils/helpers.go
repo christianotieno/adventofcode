@@ -46,3 +46,7 @@ func IsRepeatedSequence(n int) bool {
 	return false
 }
 
+func Max(a, b int) int {
+    if a > b { return a }
+    return b
+}
